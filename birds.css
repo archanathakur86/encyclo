@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  background-color: #4caf50; /* Green header background */
+  color: #fff;
+  padding: 20px 0;
+}
+header h1{
+  font-size: 50px;
+margin: 0;
+}
+header p{
+  font-size: 30px;
+  margin: 10px 0 0;
+}
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background: #ffffff;
+
+}
+
+.hero-img {
+  width: 50%;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 500px;
+ 
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+}
+.hero-text h2{
+  font-size: 30px;
+  color:#2e7d32;
+}
+.hero-text p{
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.features {
+  padding: 20px;
+  background-color: #e3f2fd; /* Light blue for the features section */
+  text-align: center;
+}
+
+.features h2 {
+  color: #3b5998; /* Blue for section title */
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  width: 300px;
+  font-size: 20px;
+  
+}
+.card h3{
+  color: #2e7d32;
+  margin: 10px 0;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 60%;
+}
+
+.fun-facts {
+  padding: 20px;
+  background-color:  #e3f2fd; /* Yellow for fun facts */
+
+}
+
+.fun-facts h2 {
+  text-align: left;
+  color: #444;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.fun-facts ul {
+  list-style-type: square;
+  padding-left: 0px;
+  font-size: 1.5em;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.8;
+}
+
+.cta {
+  text-align: center;
+  padding: 20px;
+  background-color: #4caf50 ; /* Blue for CTA */
+  color: white;
+}
+
+.cta-button {
+  text-decoration: none;
+  color: white;
+  background-color: #9dc1f7 ; /* Orange for button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.homebutton{
+  text-decoration: none;
+  color: white;
+  background-color: #9dc1f7 ; /* Orange for button */
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  
+
+}
+
+.cta-button:hover {
+  background-color: #f44336; /* Red on hover */
+}
+.homebutton:hover{
+  background-color:#f44336 ;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+.card-2img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 50%;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 30px;
+  }
+ 
