@@ -3,54 +3,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Encyclopedia</title>
+    <title>Animal Encyclopedia - Discover the Wonders of Wildlife</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Encyclopedia of Animals</h1>
-        <p>Explore the fascinating world of animals, their habitats, and unique characteristics.</p>
-    </header>
-    <main>
-        <div>
-        <section class="about">
-            <h2>Welcome to the Encyclopedia of Animals! </h2><p> Encyclopedia of Animals is a vast collection of knowledge dedicated to the incredible diversity of the animal kingdom. This comprehensive resource aims to provide you with all the essential information about animals from around the world.</p>
-
-            <p> Explore the fascinating world of animals! From the depths of the oceans to the highest mountain peaks, animals come in all shapes, sizes, and colors. This comprehensive guide offers you a glimpse into the diverse species that share our planet, their unique behaviors, habitats, and vital roles in ecosystems.
- Whether you’re curious about mammals, birds, reptiles, or aquatic life, you’ll find rich, detailed information here. Learn about endangered species, animal migration, and discover fun facts that will amaze you. Join us on this journey to understand the beauty, complexity, and importance of the animal world.
-                
-</p>                
-            <h3><strong>Our collection covers a wide range of species, including:</strong></h3>
-            <ul>
-                <li>Detailed descriptions of animals’ biology, behavior, and habitat.</li>
-                <li>Fun facts and trivia that make learning enjoyable for all ages.</li>
-                <li>High-quality images to help visualize and understand each species.</li>
-                <li>Up-to-date information on conservation status and environmental challenges facing wildlife.</li>
-            </ul>
-
-            <p>Explore the animal world through our carefully curated entries that bring each species to life. Our encyclopedia aims to inspire a deeper connection with nature, fostering a sense of respect and understanding for the creatures we share our planet with.</p>
-            <p>Whether you’re curious about Mammals, Birds, Reptiles, you’ll find rich, detailed information here. Learn about endangered species, animal migration, and discover fun facts that will amaze you.
-
-                Dive into the world of mammals, known for their warmth and nurturing instincts, discover the flight and beauty of birds, or learn about the ancient and fascinating traits of reptiles. Join us on this journey to understand the beauty, complexity, and importance of the animal world.
-                
-                </p>
-        </section>
+    <section class="hero">
+        <div class="hero-background">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
         </div>
-        <section class="category">
-            <a href="mammals.html" class="category-card">
-                <h2>Mammals</h2>
-                <p>Warm-blooded animals that give birth to live young.</p>
-            </a>
-            <a href="birds.html" class="category-card">
-                <h2>Birds</h2>
-                <p>Birds are feathered creatures known for their ability to fly, although some species cannot fly.</p>
+        <div class="hero-content">
+            <div class="hero-badge fade-in">🌍 Explore Wildlife</div>
+            <h1 class="hero-title">
+                <span class="text-line-1">Discover Amazing</span>
+                <span class="text-line-2">Animals of Our Planet</span>
+            </h1>
+            <p class="hero-description fade-in-delay">Journey through the wild and learn about incredible creatures, their habitats, and the fascinating world of wildlife conservation.</p>
+            
+            <div class="hero-stats">
+                <div class="hero-stat-item">
+                    <div class="stat-icon">🦁</div>
+                    <div class="stat-info">
+                        <strong>500+</strong>
+                        <span>Species</span>
+                    </div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="stat-icon">🌎</div>
+                    <div class="stat-info">
+                        <strong>7</strong>
+                        <span>Continents</span>
+                    </div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-info">
+                        <strong>1000+</strong>
+                        <span>Facts</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="#category-section" class="btn-primary">
+                    <span>Explore Animals</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </a>
-                <a href="reptiles.html" class="category-card">
-                    <h2>Reptiles</h2>
-                    <p>Reptiles are cold-blooded animals, including snakes, lizards, turtles, and crocodiles.</p>
+                <a href="#about-section" class="btn-secondary">
+                    <span>Learn More</span>
                 </a>
-</section>
-</main>
- <footer>
-        <p>&copy; 2024 Encyclopedia of Animals | All rights reserved</p>
+            </div>
+        </div>
+        
+        <div class="hero-image-preview">
+            <div class="preview-card card-1">
+                <div class="card-emoji">🦅</div>
+                <span>Birds</span>
+            </div>
+            <div class="preview-card card-2">
+                <div class="card-emoji">🐘</div>
+                <span>Mammals</span>
+            </div>
+            <div class="preview-card card-3">
+                <div class="card-emoji">🐊</div>
+                <span>Reptiles</span>
+            </div>
+        </div>
+        
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <main>
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="500">0</h3>
+                    <p class="stat-label">Animal Species</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="3">0</h3>
+                    <p class="stat-label">Major Categories</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="1000">0</h3>
+                    <p class="stat-label">Amazing Facts</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-target="7">0</h3>
+                    <p class="stat-label">Continents Covered</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about-section">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Welcome to Your Wildlife Journey</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Connecting you with the natural world through education and exploration</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-card slide-in-left">
+                    <div class="card-icon">🌍</div>
+                    <h3>Explore the Animal Kingdom</h3>
+                    <p>From the depths of the oceans to the highest mountain peaks, discover animals in all shapes, sizes, and colors. Our comprehensive encyclopedia brings you face-to-face with the incredible diversity of life on Earth.</p>
+                </div>
+                
+                <div class="about-card slide-in-up">
+                    <div class="card-icon">📚</div>
+                    <h3>Rich Educational Content</h3>
+                    <p>Dive deep into detailed descriptions of animal biology, behavior, habitats, and unique characteristics. Every entry is crafted to inspire curiosity and expand your understanding of the natural world.</p>
+                </div>
+                
+                <div class="about-card slide-in-right">
+                    <div class="card-icon">🦁</div>
+                    <h3>Conservation Awareness</h3>
+                    <p>Learn about endangered species, conservation efforts, and environmental challenges. Discover how we can protect and preserve the magnificent creatures that share our planet.</p>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <p>Detailed Biology & Behavior Insights</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <p>Fun Facts & Trivia for All Ages</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <p>High-Quality Visual Content</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <p>Conservation Status Updates</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <p>Habitat & Ecosystem Information</p>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <p>Migration & Behavioral Patterns</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="category-section" id="category-section">
+            <div class="section-header">
+                <span class="section-badge">Categories</span>
+                <h2 class="section-title">Explore by Category</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Choose your adventure into the animal kingdom</p>
+            </div>
+            
+            <div class="category">
+                <a href="mammals.html" class="category-card mammals-card">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <div class="card-icon-large">🦁</div>
+                        <h2>Mammals</h2>
+                        <p>Warm-blooded animals that give birth to live young and nurse their offspring</p>
+                        <div class="card-examples">
+                            <span>Lions</span> • <span>Elephants</span> • <span>Dolphins</span>
+                        </div>
+                        <div class="explore-btn">Explore Mammals →</div>
+                    </div>
+                </a>
+                
+                <a href="birds.html" class="category-card birds-card">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <div class="card-icon-large">🦅</div>
+                        <h2>Birds</h2>
+                        <p>Feathered creatures known for their ability to fly and melodious songs</p>
+                        <div class="card-examples">
+                            <span>Eagles</span> • <span>Parrots</span> • <span>Penguins</span>
+                        </div>
+                        <div class="explore-btn">Explore Birds →</div>
+                    </div>
+                </a>
+                
+                <a href="reptiles.html" class="category-card reptiles-card">
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <div class="card-icon-large">🐊</div>
+                        <h2>Reptiles</h2>
+                        <p>Cold-blooded animals including snakes, lizards, turtles, and crocodiles</p>
+                        <div class="card-examples">
+                            <span>Crocodiles</span> • <span>Turtles</span> • <span>Snakes</span>
+                        </div>
+                        <div class="explore-btn">Explore Reptiles →</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2 class="cta-title">Ready to Begin Your Journey?</h2>
+            <p class="cta-text">Dive into the fascinating world of animals and uncover the secrets of nature</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <h3 class="brand-title">Encyclopedia of Animals</h3>
+                    <p class="brand-description">Exploring the magnificent diversity of wildlife across our planet. Join us in discovering and protecting Earth's incredible creatures.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="mammals.html">Mammals</a></li>
+                            <li><a href="birds.html">Birds</a></li>
+                            <li><a href="reptiles.html">Reptiles</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#conservation">Conservation</a></li>
+                            <li><a href="#education">Education</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#newsletter">Newsletter</a></li>
+                            <li><a href="#social">Social Media</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Encyclopedia of Animals. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#terms">Terms of Service</a>
+                    <span>•</span>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + '+';
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 16);
+        }
+
+        const observerOptions = {
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    if (entry.target.classList.contains('stats-section')) {
+                        const counters = entry.target.querySelectorAll('.stat-number');
+                        counters.forEach(counter => animateCounter(counter));
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-up, .stats-section, .category-card, .feature-item');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
